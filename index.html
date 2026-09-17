@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Köhler | Portfolio</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: #1e293b;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav li {
+            margin: 0 20px;
+        }
+
+        nav a {
+            display: block;
+            padding: 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #1e293b, #2563eb);
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            font-size: 1.3rem;
+            font-weight: normal;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2.section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #2563eb;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header h2 {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>#inicioInicio</a></li>
+            <li>#sobre-miSobre mí</a></li>
+            <li>#habilidadesHabilidades</a></li>
+            <li>#experienciaExperiencia</a></li>
+            <li>#formacionFormación</a></li>
+            <li><aontactoContacto</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio">
+        <h1>Christian Köhler</h1>
+
+        <h2>
+            Estudiante de ASIR | Sistemas, Redes,
+            Virtualización y Bases de Datos
+        </h2>
+    </header>
+
+    <section id="sobre-mi">
+
+        <h2 class="section-title">Sobre mí</h2>
+
+        <div class="about">
+            <p>
+                Soy estudiante de Administración de Sistemas Informáticos en Red
+                (ASIR) en U-tad. También cuento con formación en Sistemas
+                Microinformáticos y Redes (SMR) y experiencia académica en
+                Desarrollo de Aplicaciones Multiplataforma (DAM).
+
+                Me interesa especialmente la administración de sistemas,
+                las redes, la virtualización y las bases de datos.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="habilidades">
+
+        <h2 class="section-title">Habilidades</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Administración de Sistemas</h3>
+
+                <p>
+                    Linux, Windows Server,
+                    gestión de usuarios y servicios.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Redes</h3>
+
+                <p>
+                    TCP/IP, DHCP, DNS,
+                    VLANs y resolución de incidencias.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Bases de Datos</h3>
+
+                <p>
+                    MySQL y modelado básico
+                    de bases de datos.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="experiencia">
+
+        <h2 class="section-title">Experiencia</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Reddo Tanuki - U-tad</h3>
+
+                <p>
+                    Participación en el montaje de una radio para la universidad.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Mental Gaming</h3>
+
+                <p>
+                    Desarrollo de páginas web y optimización SEO.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cruz Roja</h3>
+
+                <p>
+                    Inventario y organización de recursos tecnológicos.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Socorrista (2023 - 2026)</h3>
+
+                <p>
+                    Experiencia laboral desarrollando responsabilidad,
+                    atención al público y trabajo en equipo.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="formacion">
+
+        <h2 class="section-title">Formación y Certificaciones</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>ASIR</h3>
+                <p>Administración de Sistemas Informáticos en Red (U-tad)</p>
+            </div>
+
+            <div class="card">
+                <h3>DAM</h3>
+                <p>Primer curso completado</p>
+            </div>
+
+            <div class="card">
+                <h3>SMR</h3>
+                <p>Sistemas Microinformáticos y Redes</p>
+            </div>
+
+            <div class="card">
+                <h3>Certificaciones</h3>
+                <p>
+                    Capacitación Digital (2024)<br>
+                    Inteligencia Artificial Generativa - U-tad
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contacto">
+
+        <h2 class="section-title">Contacto</h2>
+
+        <div class="contact">
+
+            <p>
+                📧
+                <a href="mailto:xtiankoehler@gmail.com">
+                    xtiankoehler@gmail.com
+                </a>
+            </p>
+
+            <br>
+
+            <p>
+                💼
+                https://www.linkedin.com/in/xtiankoehler
+                    LinkedIn
+                </a>
+            </p>
+
+            <br>
+
+            <p>
+                💻
+                https://github.com/xtiankoehler
+                    GitHub
+                </a>
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+        © 2026 Christian Köhler
+    </footer>
+
+</body>
+</html>
